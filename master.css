@@ -1,0 +1,97 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: consolas;
+   font-size: 1vw;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   row-gap: .6em;
+   background: #ff5;
+   min-height: 100vh;
+}
+
+.boton {
+   padding: 2em;
+}
+
+.boton button {
+   position: relative;
+   padding: .2em .5em;
+   font-size: 3em;
+   color: #330;
+   background: #ff0;
+   cursor: pointer;
+   border: .1em solid #550;
+   border-radius: 1em;
+}
+
+.boton button:hover {
+   background: #eedf00;
+}
+
+.reloj {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border: .2em solid #000;
+   border-radius: 5em;
+   width: 60%;
+   height: 20em;
+   padding: 0 2em;
+   background: #ff05;
+   color: #330;
+   user-select: none;
+   box-shadow: 0 0 .5em .1em #660;
+}
+
+.reloj .contador {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-grow: 5;
+   font-size: 10em;
+   height: 80%;
+   background: #ff1e;
+   border: .01em solid #000;
+   box-shadow: .03em 0 .05em 0 #dd0d;
+}
+
+.reloj .horas {
+   border-radius: 20% 0 0 20%;
+}
+
+.reloj .segundos {
+   border-radius: 0 20% 20% 0;
+   background: #ee3;
+}
+
+.reloj .separador {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-grow: 1;
+   font-size: 8em;
+   color: #660;
+   height: 80%;
+   border: .01em solid #000;
+   border-left: none;
+   border-right: none;
+}
+
+.reloj .formato {
+   position: relative;
+   top: 10%;
+   padding: .2em .5em;
+   font-size: 3em;
+   border: .02em solid #000;
+   border-radius: 30%;
+   background: #ff1e;
+   margin-left: .5em;
+   box-shadow: 0 0 .05em .05em #660a;
+}
